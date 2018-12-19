@@ -29,7 +29,7 @@ database calls on the homepage. But for now, this shows how to pass data
 between functions.
 */
 
-// Test functions are for examples.
+// Test functions are for examples. Increment function displayed on home.js view.
 
 class testContainer extends Container {
   state = { count: 0 }
@@ -62,7 +62,6 @@ export function TestSubscriber() {
 // Actual Classes
 
 // Water Bottle Access Classes
-
 class Bottle extends Container {
   state = { bottleCapacity: 36, remainingCapacity: 36 }
   setCapacity = (bottleCapacity) => {
@@ -117,6 +116,8 @@ class User extends Container {
     this.setState({ amountConsumed: amountConsumed })
   }
 }
+// This makes you're not re initialzing user every time the page is re-rendered.
+// TODO: On login, this value should change every time a new user logs in.
 const GlobalUser = new User()
 
 export class DisplayDailyGoal extends React.Component {
@@ -126,6 +127,7 @@ export class DisplayDailyGoal extends React.Component {
         {(user) => (
           <View>
             <CustomText style={this.props.style}>
+              {/* This returns the number then the string 'oz' after */}
               {user.state.dailyGoal} oz
             </CustomText>
           </View>
@@ -144,7 +146,7 @@ function ChangeDailyGoal() {
             placeholder="Change Users Daily Goal."
             value={user.state.bottleCapacity}
             onSubmitEditing={
-              (event) => user.changeGoal(event.nativeEvent.text) // Note this complicated syntax.
+              (event) => user.changeGoal(event.nativeEvent.text) // Some developers use e instead.
             }
           />
           <CustomText>{user.state.dailyGoal}</CustomText>
@@ -180,6 +182,7 @@ export class DisplayDailyProgress extends React.Component {
 
   render() {
     return (
+      // Note this return is a full fledged design, not just data.
       <Subscribe to={[GlobalUser]}>
         {(user) => (
           <View style={{ backgroundColor: "white", padding: "5%" }}>
@@ -207,6 +210,7 @@ export default class Values extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        {/* Demonstration of using multiple subscribers in one Provider */}
         <Provider>
           <ChangeBottleCapacity />
           <ChangeDailyGoal />
