@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>BFEB0376-78E9-411C-9508-9466D2F5FFE8</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BFEB0376-78E9-411C-9508-9466D2F5FFE8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SmartSipAppV0 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SmartSipAppV0</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project SmartSipAppV0 with scheme SmartSipAppV0 and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>566698888.77740705</real>
+			<key>timeStoppedRecording</key>
+			<real>566698896.44572604</real>
+			<key>title</key>
+			<string>Building project SmartSipAppV0 with scheme SmartSipAppV0 and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>BFEB0376-78E9-411C-9508-9466D2F5FFE8</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

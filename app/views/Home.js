@@ -21,9 +21,19 @@ import {
 } from "react-native"
 import Icon from "react-native-vector-icons/FontAwesome"
 import CustomText from "../components/CustomText"
-
-// TODO: List instructions later.
 import { AnimatedCircularProgress } from "react-native-circular-progress"
+
+import { Provider, Subscribe, Container } from "unstated"
+import {
+  TestSubscriber,
+  DisplayBottleCapacity,
+  DisplayDailyGoal,
+  DisplayDailyProgress
+} from "./Values"
+
+type CounterState = {
+  count: number
+}
 
 // Logo Implementation
 class LogoTitle extends Component {
@@ -60,15 +70,9 @@ export default class Home extends Component<Props> {
       <View style={styles.container}>
         <View>
           {/* Top Bar, background white, TODO: Remove top bar border */}
-          <View style={{ backgroundColor: "white", padding: "5%" }}>
-            {/* Use CustomText to apply a global font style. */}
-            <CustomText style={{ fontSize: 36, fontWeight: "bold" }}>
-              21.6 oz to Go!
-            </CustomText>
-            <CustomText style={{ fontSize: 24, fontWeight: "bold" }}>
-              14.4 oz
-            </CustomText>
-          </View>
+          <Provider>
+            <DisplayDailyProgress />
+          </Provider>
           {/* Water Bottle Large Display */}
           <View
             style={{
@@ -104,17 +108,13 @@ export default class Home extends Component<Props> {
             </AnimatedCircularProgress>
           </View>
           {/* Making Columns */}
-          <View
-            style={
-              { flexDirection: "row", justifyContent: "center" }
-              //alignItems: "flex-start",
-              //flexWrap: "wrap"
-            }
-          >
+          <View style={{ flexDirection: "row", justifyContent: "center" }}>
             {/* Dashboard box 1 */}
             <View style={styles.dashboardContainer}>
               <CustomText style={{}}>Today's Goal.</CustomText>
-              <CustomText style={styles.dashboardH1}>36 oz</CustomText>
+              <Provider>
+                <DisplayDailyGoal style={styles.dashboardH1} />
+              </Provider>
               <CustomText style={styles.lightGrey}>
                 Adjust Drinking Goals
               </CustomText>
@@ -146,6 +146,11 @@ export default class Home extends Component<Props> {
           title="Test button"
           onPress={() => this.props.navigation.navigate("Friends")}
         />
+
+        {/* A demonstrating of mutating numbers across different views. */}
+        <Provider>
+          <TestSubscriber />
+        </Provider>
       </View>
     )
   }
