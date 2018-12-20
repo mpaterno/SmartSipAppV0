@@ -40,7 +40,6 @@ class testContainer extends Container {
     this.setState({ count: this.state.count - 1 })
   }
 }
-
 const sharedtestContainer = new testContainer()
 
 export function TestSubscriber() {
@@ -63,9 +62,12 @@ export function TestSubscriber() {
 
 // Water Bottle Access Classes
 class Bottle extends Container {
-  state = { bottleCapacity: 36, remainingCapacity: 36 }
+  state = { bottleCapacity: 36, remainingCapacity: 30 }
   setCapacity = (bottleCapacity) => {
     this.setState({ bottleCapacity: bottleCapacity })
+  }
+  setRemainingCapacity = (remainingCapacity) => {
+    this.setState({ remainingCapacity: remainingCapacity })
   }
 }
 const GlobalBottle = new Bottle()
@@ -84,6 +86,31 @@ export class DisplayBottleCapacity extends React.Component {
       </Subscribe>
     )
   }
+}
+
+function ChangeRemainingCapacity() {
+  return (
+    <Subscribe to={[GlobalBottle]}>
+      {(bottle) => (
+        <View style={styles.container}>
+          <TextInput
+            placeholder="Change Remaining Capacity."
+            value={bottle.state.remainingCapacity}
+            onSubmitEditing={
+              (event) => bottle.setRemainingCapacity(event.nativeEvent.text) // Note this complicated syntax.
+            }
+          />
+          <CustomText>{bottle.state.remainingCapacity}</CustomText>
+        </View>
+      )}
+    </Subscribe>
+  )
+}
+
+function displayRemainingBottleCapacity() {
+  return (
+    <Subscribe to={[GlobalBottle]}>{bottle.state.remainingCapacity}</Subscribe>
+  )
 }
 
 function ChangeBottleCapacity() {
@@ -144,7 +171,7 @@ function ChangeDailyGoal() {
         <View style={styles.container}>
           <TextInput
             placeholder="Change Users Daily Goal."
-            value={user.state.bottleCapacity}
+            value={user.state.dailyGoal}
             onSubmitEditing={
               (event) => user.changeGoal(event.nativeEvent.text) // Some developers use e instead.
             }
@@ -203,25 +230,16 @@ export class DisplayDailyProgress extends React.Component {
 
 type Props = {}
 export default class Values extends Component<Props> {
-  constructor(props) {
-    super(props)
-    this.state = { bottleCapacity: "" }
-  }
   render() {
     return (
       <View style={styles.container}>
         {/* Demonstration of using multiple subscribers in one Provider */}
         <Provider>
           <ChangeBottleCapacity />
+          <ChangeRemainingCapacity />
           <ChangeDailyGoal />
           <ChangeConsumption />
         </Provider>
-
-        <Text>{this.state.bottleCapacity}</Text>
-        <TextInput
-          placeholder="Change Water Bottle Capacity."
-          onChangeText={(bottleCapacity) => this.setState({ bottleCapacity })}
-        />
       </View>
     )
   }

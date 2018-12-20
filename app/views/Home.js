@@ -28,7 +28,8 @@ import {
   TestSubscriber,
   DisplayBottleCapacity,
   DisplayDailyGoal,
-  DisplayDailyProgress
+  DisplayDailyProgress,
+  DisplayRemainingBottleCapacity
 } from "./Values"
 
 type CounterState = {
@@ -85,7 +86,13 @@ export default class Home extends Component<Props> {
             <AnimatedCircularProgress
               size={200}
               width={3}
-              fill={90}
+              fill={
+                90
+                // TODO: Figure out how to return value.
+                // <Provider>
+                //   <DisplayRemainingBottleCapacity />
+                // </Provider>
+              }
               tintColor="#5cacff"
               backgroundColor="#dbedff"
             >
