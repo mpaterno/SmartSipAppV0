@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/mpaterno/Desktop/smart-sip-app/SmartSipAppV0/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
-  /Users/mpaterno/Desktop/smart-sip-app/SmartSipAppV0/node_modules/react-native/ReactCommon/jschelpers/Unicode.h
+  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
+  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jschelpers/Unicode.h

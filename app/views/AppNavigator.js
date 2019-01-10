@@ -5,6 +5,7 @@ import App from "./App"
 import Home from "./Home"
 import Friends from "./Friends"
 import Values from "./Values"
+import Locate from "./Locate"
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -15,6 +16,9 @@ const AppNavigator = createStackNavigator({
   },
   Values: {
     screen: Values
+  },
+  Locate: {
+    screen: Locate
   }
 })
 const AppContainer = createAppContainer(AppNavigator)

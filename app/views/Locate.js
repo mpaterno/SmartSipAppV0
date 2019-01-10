@@ -1,8 +1,12 @@
 //'usestrict'
 
-//APIKeyAIzaSyDCydDhMr-JJhIwuJLz7M9fSxjxzouNkFA
+//APIKey AIzaSyDCydDhMr-JJhIwuJLz7M9fSxjxzouNkFA
+// with directions and places AIzaSyDlpQZIMMEZDzfl_HgkrJq0ia0Vm76GW2w
 
-import{ GoogleApiWrapper } from "google-maps-react"
+
+//import GoogleMapReact from "google-map-react"
+
+//import MapView, {PROVIDER_GOOGLE} from 'react-native-maps'
 
 import React, {Component} from "react"
 import {
@@ -16,7 +20,7 @@ import {
     TouchableNativeFeedback,
     TouchableWithoutFeedback,
     Image,
-    Animated
+    Animated,
 } from "react-native"
 import Icon from "react-native-vector-icons/FontAwesome"
 import CustomText from "../components/CustomText"
@@ -101,6 +105,7 @@ class Locate extends Component {
 
     render() {
         return (
+
             <View style = {styles.locationContainer}>
                 <Animated.View
                     style={[styles.locationContainer,
@@ -109,11 +114,25 @@ class Locate extends Component {
                     <TouchableHighlight style={styles.button} onPress={() => {
                         this.toggleLocationContainer()
                     }}>
-                    <Text style={styles.buttonText}>{this.state.containerHeader}</Text>
+                        <Text style={styles.buttonText}>{this.state.containerHeader}</Text>
                     </TouchableHighlight>
                     <Text style={styles.locations}>613 Gayley Avenue</Text>
                 </Animated.View>
             </View>
+            /*<View style={styles.container}>
+                <MapView
+                    provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+                    style={styles.map}
+                    region={{
+                        latitude: 37.78825,
+                        longitude: -122.4324,
+                        latitudeDelta: 0.015,
+                        longitudeDelta: 0.0121,
+                    }}
+                >
+                </MapView>
+            </View>*/
+
         );
     }
 
@@ -139,41 +158,51 @@ class Locate extends Component {
 //}
 //
 const styles = StyleSheet.create({
-container:{
+    container:{
 //flex:1,
 //justifyContent:"center",
 //alignItems:"center",
-backgroundColor:"#e8f7ff"
-},
-dashboardSideContainer:{
-width:"45%",
-margin:5
-},
-dashboardContainer:{
-borderRadius:20,
-margin:5,
-backgroundColor:"white",
-padding:15
-},
-dashboardH1:{
-fontSize:30,
-fontWeight:"bold"
-},
-lightGrey:{
-color:"#0000FF"
-},
+        backgroundColor:"#e8f7ff"
+    },
+    mapContainer: {
+        ...StyleSheet.absoluteFillObject,
+        height: 400,
+        width: 400,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    map: {
+        ...StyleSheet.absoluteFillObject,
+    },
+    dashboardSideContainer:{
+        width:"45%",
+        margin:5
+    },
+    dashboardContainer:{
+        borderRadius:20,
+        margin:5,
+        backgroundColor:"white",
+        padding:15
+    },
+    dashboardH1:{
+        fontSize:30,
+        fontWeight:"bold"
+    },
+    lightGrey:{
+        color:"#0000FF"
+    },
 //ForMatt-createastylesheetsothatthecontainerheaderisrightatthebottomfromthebeginning-->remembercannot
 //useabsolutevaluesbecausedifferentphoneshavedifferentsizes
-locationContainer:{
-alignItems:'center',
-bottom:-260
-},
-subView:{
-position:"absolute",
-backgroundColor:"#FFFFFF",
-height:100,
+    locationContainer:{
+        alignItems:'center',
+        bottom:-260
+    },
+    subView:{
+        position:"absolute",
+        backgroundColor:"#FFFFFF",
+        height:100,
 //bottom:120
-}
+    }
 //,
 //mapStyle:{
 //height:'100%',
@@ -188,31 +217,9 @@ height:100,
 //AppRegistry.registerComponent('AppContainer',()=>AppContainer);
 export default Locate;
 
-// importReact,{Component}from'react';
-// import{Map,GoogleApiWrapper}from'google-maps-react';
 //
-// constmapStyles={
-//     width:'100%',
-//     height:'100%'
-// };
-//
-// exportclassMapContainerextendsComponent{
-//     render(){
-//         return(
-//             <Map
-//                 google={this.props.google}
-//                 zoom={14}
-//                 style={mapStyles}
-//                 initialCenter={{
-//                     lat:-1.2884,
-//                     lng:36.8233
-//                 }}
-//             />
-//         );
-//     }
-// }
-//
-// exportdefaultGoogleApiWrapper({
-//     apiKey:'YOUR_GOOGLE_API_KEY_GOES_HERE'
+// export default GoogleApiWrapper({
+//     apiKey:'AIzaSyDCydDhMr-JJhIwuJLz7M9fSxjxzouNkFA'
 // })(MapContainer);
 //
+

@@ -135,7 +135,7 @@ export default class Home extends Component<Props> {
                 </CustomText>
               </View>
               <TouchableOpacity
-                onPress={() => this.props.navigation.navigate("Friends")}
+                onPress={() => this.props.navigation.navigate("Locate")}
                 underlayColor="white"
               >
                 {/* Dashboard box 3 */}
@@ -151,7 +151,7 @@ export default class Home extends Component<Props> {
 
         <Button
           title="Test button"
-          onPress={() => this.props.navigation.navigate("Friends")}
+          onPress={() => this.props.navigation.navigate("Locate")}
         />
 
         {/* A demonstrating of mutating numbers across different views. */}

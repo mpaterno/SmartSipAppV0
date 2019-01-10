@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/mpaterno/Desktop/smart-sip-app/SmartSipAppV0/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.cpp \
-  /Users/mpaterno/Desktop/smart-sip-app/SmartSipAppV0/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.h
+  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.cpp \
+  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/privatedata/PrivateDataBase.h
