@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>1830AF0A-0D21-4B7E-B768-B3856951AE3F</key>
+		<key>20DADD45-92CF-4F14-9E91-22A3D61AFD99</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1830AF0A-0D21-4B7E-B768-B3856951AE3F.xcactivitylog</string>
+			<string>20DADD45-92CF-4F14-9E91-22A3D61AFD99.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,13 @@
 			<key>signature</key>
 			<string>Building workspace SmartSipAppV0 with scheme SmartSipAppV0 and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>568395577.96572602</real>
+			<real>568791274.24229395</real>
 			<key>timeStoppedRecording</key>
-			<real>568395580.02915299</real>
+			<real>568791306.78022397</real>
 			<key>title</key>
 			<string>Building workspace SmartSipAppV0 with scheme SmartSipAppV0 and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>1830AF0A-0D21-4B7E-B768-B3856951AE3F</string>
+			<string>20DADD45-92CF-4F14-9E91-22A3D61AFD99</string>
 		</dict>
 	</dict>
 </dict>

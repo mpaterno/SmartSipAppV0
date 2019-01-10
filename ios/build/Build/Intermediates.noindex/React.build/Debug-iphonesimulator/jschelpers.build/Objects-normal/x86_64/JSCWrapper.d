@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.cpp \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/third-party/glog-0.3.5/src/glog/logging.h \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/third-party/glog-0.3.5/src/glog/log_severity.h \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/third-party/glog-0.3.5/src/glog/vlog_is_on.h
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.cpp \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/third-party/glog-0.3.5/src/glog/logging.h \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/third-party/glog-0.3.5/src/glog/log_severity.h \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/third-party/glog-0.3.5/src/glog/vlog_is_on.h

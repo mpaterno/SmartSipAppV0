@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h

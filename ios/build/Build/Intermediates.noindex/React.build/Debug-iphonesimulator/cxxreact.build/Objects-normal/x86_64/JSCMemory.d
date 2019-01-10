@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.cpp \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.h \
-  /Users/mateilupu/Documents/SmartSipApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/mateilupu/Documents/SmartSipApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.cpp \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.h \
+  /Users/mpaterno/Desktop/SmartSipAppV0/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/mpaterno/Desktop/SmartSipAppV0/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h

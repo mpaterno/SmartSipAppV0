@@ -6,6 +6,7 @@ import Home from "./Home"
 import Friends from "./Friends"
 import Values from "./Values"
 import Locate from "./Locate"
+import Personalize from "./Personalize"
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -19,6 +20,9 @@ const AppNavigator = createStackNavigator({
   },
   Locate: {
     screen: Locate
+  },
+  Personalize: {
+    screen: Personalize
   }
 })
 const AppContainer = createAppContainer(AppNavigator)

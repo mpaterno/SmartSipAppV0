@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
-  /Users/mateilupu/Documents/SmartSipApp/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
+  /Users/mpaterno/Desktop/SmartSipAppV0/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h

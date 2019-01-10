@@ -117,15 +117,20 @@ export default class Home extends Component<Props> {
           {/* Making Columns */}
           <View style={{ flexDirection: "row", justifyContent: "center" }}>
             {/* Dashboard box 1 */}
-            <View style={styles.dashboardContainer}>
-              <CustomText style={{}}>Today's Goal.</CustomText>
-              <Provider>
-                <DisplayDailyGoal style={styles.dashboardH1} />
-              </Provider>
-              <CustomText style={styles.lightGrey}>
-                Adjust Drinking Goals
-              </CustomText>
-            </View>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate("Personalize")}
+              underlayColor="white"
+            >
+              <View style={styles.dashboardContainer}>
+                <CustomText style={{}}>Today's Goal.</CustomText>
+                <Provider>
+                  <DisplayDailyGoal style={styles.dashboardH1} />
+                </Provider>
+                <CustomText style={styles.lightGrey}>
+                  Adjust Drinking Goals
+                </CustomText>
+              </View>
+            </TouchableOpacity>
             <View style={{ width: "45%" }}>
               {/* Dashboard box 2 */}
               <View style={styles.dashboardContainer}>
